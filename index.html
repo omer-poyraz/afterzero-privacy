@@ -41,7 +41,7 @@
 <p>AFTERZERO: Zombie Frontier ("the Game") is developed and published by <strong>Poyraz Yazılım</strong> (Ömer Poyraz), Türkiye. Contact: <a href="mailto:omerr.poyrazz@gmail.com">omerr.poyrazz@gmail.com</a>.</p>
 
 <h3>Summary</h3>
-<p>The single-player game works offline. You never need an account, and we never collect your e-mail, contacts, photos or precise location. Optional online features (co-op, world leaderboards, save transfer) use a small server we run on Cloudflare and only send what is described in section 1a. The other third-party services built into the Game are <strong>Google AdMob</strong> (ads) and <strong>Google Play Billing</strong> (purchases). The Game contains <strong>no analytics</strong> and <strong>no tracking SDKs</strong> other than those two.</p>
+<p>The single-player game works offline. You never need an account, and we never collect your e-mail, contacts, photos or precise location. Optional online features (co-op, world leaderboards, save transfer) use a small server we run on Cloudflare and only send what is described in section 1a. The other third-party services built into the Game are <strong>Google AdMob</strong> (ads) and <strong>Google Play Billing</strong> (purchases). The Game contains <strong>no third-party analytics or tracking SDKs</strong>; it only sends the anonymous game statistics described in section 1a to our own server.</p>
 
 <h3>1. Data stored on your device</h3>
 <p>Your progress (level, scrap, upgrades, unlocked weapons, records, daily missions, purchase status) and your settings (volume, graphics, language, controls) are saved only in the Game's private storage on your device. It stays on your device unless you use an online feature below. Uninstalling the Game deletes it.</p>
@@ -52,6 +52,7 @@
 <tr><td>World leaderboards, daily challenge, weekly event</td><td>The player name you chose in the Game, a random install ID created by the Game (not linked to your Google account or Advertising ID), wave, kills and score</td><td>Only your best entry per board; removed on request</td></tr>
 <tr><td>Online co-op</td><td>A temporary room code and connection data (including your IP address) exchanged with the other players in your room, directly or through Cloudflare's relay service, to connect your phones</td><td>Only while the room is open; not stored</td></tr>
 <tr><td>Save transfer code (Settings)</td><td>A copy of your game progress, only when you tap "Create code"</td><td>90 days, then deleted automatically</td></tr>
+<tr><td>Anonymous game statistics and error reports (when online)</td><td>A scrambled one-way code derived from the random install ID, app version, phone model, Android version, language, graphics setting, game events (mode, wave reached, run length, tutorial finished, daily reward, whether an ad or purchase succeeded) and error messages from the Game's code. Used only to fix crashes and balance the game.</td><td>Stored only as daily totals per event (no names, no IP addresses); deleted after 13 months</td></tr>
 </table>
 <p>The server is operated on Cloudflare (Cloudflare, Inc.), which processes requests on our behalf; see <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's privacy policy</a>. We do not sell or share this data and do not use it for advertising.</p>
 
@@ -96,7 +97,7 @@
 <p>AFTERZERO: Zombie Frontier ("Oyun"), Türkiye'de <strong>Poyraz Yazılım</strong> (Ömer Poyraz) tarafından geliştirilmekte ve yayımlanmaktadır. İletişim: <a href="mailto:omerr.poyrazz@gmail.com">omerr.poyrazz@gmail.com</a>.</p>
 
 <h3>Özet</h3>
-<p>Tek oyunculu oyun çevrimdışı çalışır. Hesap oluşturmanız gerekmez; e-postanızı, rehberinizi, fotoğraflarınızı veya kesin konumunuzu asla toplamayız. İsteğe bağlı online özellikler (co-op, dünya sıralaması, kayıt aktarma) Cloudflare üzerinde çalıştırdığımız küçük bir sunucuyu kullanır ve yalnızca 1a bölümünde yazanları gönderir. Diğer üçüncü taraf hizmetler <strong>Google AdMob</strong> (reklam) ve <strong>Google Play Faturalandırma</strong>'dır (satın alma). Oyunda bu ikisi dışında <strong>analitik veya takip SDK'sı yoktur</strong>.</p>
+<p>Tek oyunculu oyun çevrimdışı çalışır. Hesap oluşturmanız gerekmez; e-postanızı, rehberinizi, fotoğraflarınızı veya kesin konumunuzu asla toplamayız. İsteğe bağlı online özellikler (co-op, dünya sıralaması, kayıt aktarma) Cloudflare üzerinde çalıştırdığımız küçük bir sunucuyu kullanır ve yalnızca 1a bölümünde yazanları gönderir. Diğer üçüncü taraf hizmetler <strong>Google AdMob</strong> (reklam) ve <strong>Google Play Faturalandırma</strong>'dır (satın alma). Oyunda <strong>üçüncü taraf analitik veya takip SDK'sı yoktur</strong>; yalnızca 1a bölümündeki anonim oyun istatistiklerini kendi sunucumuza gönderir.</p>
 
 <h3>1. Cihazınızda saklanan veriler</h3>
 <p>İlerlemeniz (seviye, hurda, yükseltmeler, açılan silahlar, rekorlar, günlük görevler, satın alma durumu) ve ayarlarınız (ses, grafik, dil, kontroller) yalnızca Oyun'un cihazınızdaki özel depolama alanında tutulur. Aşağıdaki online özellikleri kullanmadığınız sürece cihazınızda kalır. Oyunu kaldırdığınızda silinir.</p>
@@ -107,6 +108,7 @@
 <tr><td>Dünya sıralaması, günlük meydan okuma, haftalık etkinlik</td><td>Oyunda seçtiğiniz oyuncu adı, Oyun'un oluşturduğu rastgele kurulum kimliği (Google hesabınıza veya Reklam Kimliğinize bağlı değildir), dalga, öldürme ve puan</td><td>Her tabloda yalnızca en iyi kaydınız; talep üzerine silinir</td></tr>
 <tr><td>Online co-op</td><td>Geçici oda kodu ve telefonları bağlamak için odadaki diğer oyuncularla doğrudan veya Cloudflare aktarma hizmeti üzerinden paylaşılan bağlantı verileri (IP adresi dahil)</td><td>Yalnızca oda açıkken; saklanmaz</td></tr>
 <tr><td>Kayıt aktarma kodu (Ayarlar)</td><td>Yalnızca "Kod oluştur"a dokunduğunuzda oyun ilerlemenizin bir kopyası</td><td>90 gün, sonra otomatik silinir</td></tr>
+<tr><td>Anonim oyun istatistikleri ve hata raporları (çevrimiçiyken)</td><td>Rastgele kurulum kimliğinden tek yönlü üretilmiş karışık bir kod, uygulama sürümü, telefon modeli, Android sürümü, dil, grafik ayarı, oyun olayları (mod, ulaşılan dalga, oyun süresi, eğitimin bitmesi, günlük ödül, bir reklamın veya satın almanın başarılı olup olmadığı) ve Oyun kodundan hata mesajları. Yalnızca çökmeleri düzeltmek ve oyunu dengelemek için kullanılır.</td><td>Yalnızca olay başına günlük toplamlar olarak saklanır (isim ve IP adresi yok); 13 ay sonra silinir</td></tr>
 </table>
 <p>Sunucu, istekleri bizim adımıza işleyen Cloudflare (Cloudflare, Inc.) üzerinde çalışır; bkz. <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare gizlilik politikası</a>. Bu verileri satmayız, paylaşmayız ve reklam için kullanmayız.</p>
 
